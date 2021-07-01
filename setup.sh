@@ -45,4 +45,4 @@ fi
 
 # Run this from the same directory as this README file. 
 echo "Running ansible playbook ..."
-ansible-pull $REPOSITORY_URL
+ansible-pull -U $REPOSITORY_URL main.yml

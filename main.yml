@@ -4,8 +4,6 @@
   connection: local
   become: false
 
-  # vars_files:
-  #   - vars/applications.yml
   vars:
     applications:
       - disk-inventory-x
@@ -46,7 +44,7 @@
     - name: Install Apps with brew cask
       shell: brew install --cask {{ item }}
       with_items: "{{ applications }}"
-      when: "{{ item not in installed_applications.results|map(attribute='stdout') }}"
+      when: 'item not in installed_applications.results|map(attribute="stdout")'
 
     - name: Set Brew autoupdate
       shell: brew autoupdate start --enable-notification --upgrade
@@ -56,7 +54,11 @@
       shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
       when: install_oh_my_zsh == true
       tags: install_oh_my_zsh
+      ignore_errors: true
     
     - name: Replace the Oh My Zsh theme
-      shell: sed -i 's/robbyrussell/amuse/g' ~/.zshrc
+      ansible.builtin.replace:
+        path: ~/.zshrc
+        regexp: '\brobbyrussell'
+        replace: 'amuse'
       when: install_oh_my_zsh == true
