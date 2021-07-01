@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-REPOSITORY_URL=""
+REPOSITORY_URL="https://github.com/bpstuder/ansible-macos"
 
 # Ensure Apple's command line tools are installed
 if ! which cc >/dev/null; then
