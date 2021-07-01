@@ -12,7 +12,8 @@
       - mactracker
       - rectangle
       - visual-studio-code
-      - font-sauce-code-pro-nerd-font
+      - homebrew/cask-fonts/font-sauce-code-pro-nerd-font
+      - font-source-code-pro
       - github
       - postman
       - keepassxc
