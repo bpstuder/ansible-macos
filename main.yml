@@ -25,6 +25,7 @@
       - cyberduck
       - handbrake
       - iina
+      - whatsapp
     
     install_oh_my_zsh:  true
 
