@@ -1,4 +1,12 @@
 #!/bin/sh
+###
+# File: setup.sh
+# File Created: 2021-07-01 14:09:02
+# Usage : 
+# Author: Benoit-Pierre Studer
+# -----
+# HISTORY:
+###
 
 
 REPOSITORY_URL="https://github.com/bpstuder/ansible-macos"
