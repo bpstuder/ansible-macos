@@ -6,26 +6,32 @@
 
   vars:
     applications:
+      - appcleaner
+      - autopkgr
+      - cyberduck
       - disk-inventory-x
+      - dropbox
       - firefox 
-      - iterm2
-      - mactracker
-      - rectangle
-      - visual-studio-code
-      - homebrew/cask-fonts/font-sauce-code-pro-nerd-font
       - font-source-code-pro
       - github
-      - postman
+      - handbrake
+      - homebrew/cask-fonts/font-sauce-code-pro-nerd-font
+      - iina
+      - iterm2
       - keepassxc
       - macfuse
-      - veracrypt
-      - powershell
+      - mactracker
       - plex
+      - postman
+      - powershell
+      - profilecreator
+      - rectangle
+      - slack
       - suspicious-package
-      - cyberduck
-      - handbrake
-      - iina
+      - veracrypt
+      - visual-studio-code
       - whatsapp
+      - zoom
     
     install_oh_my_zsh:  true
 
